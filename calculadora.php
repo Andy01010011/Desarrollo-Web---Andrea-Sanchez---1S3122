@@ -1,43 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Calculadora PHP</title>
-</head>
-<body>
-    <h2>Calculadora Básica</h2>
+<?php
+echo "Operaciones Matematicas<br>";
+echo "Suma<br>";
+$num1 = 4;
+$num2 = 7;
+$suma = $num1 + $num2;
 
-    <form method="post" action="calculadora.php">
-        Número 1: <input type="text" name="num1"><br><br>
-        Número 2: <input type="text" name="num2"><br><br>
-        
-        <input type="submit" name="operacion" value="Sumar">
-        <input type="submit" name="operacion" value="Restar">
-        <input type="submit" name="operacion" value="Multiplicar">
-        <input type="submit" name="operacion" value="Redondear Num 1">
-    </form>
+echo "La suma de $num1 y $num2 es: $suma<br>"; // La suma de 4 y 7 es: 11
 
-    <br>
+echo "Resta<br>";
+$num1 = 10;
+$num2 = 3;
+$resta = $num1 - $num2;
 
-    <?php
-    if (isset($_REQUEST['operacion'])) {
-        $num1 = $_REQUEST['num1'];
-        $num2 = $_REQUEST['num2'];
-        $operacion = $_REQUEST['operacion'];
+echo "La resta de $num1 y $num2 es: $resta<br>"; // La resta de 10 y 3 es: 7
 
-        if ($operacion == "Sumar") {
-            $resultado = $num1 + $num2;
-            echo "La suma es: $resultado";
-        } elseif ($operacion == "Restar") {
-            $resultado = $num1 - $num2;
-            echo "La resta es: $resultado";
-        } elseif ($operacion == "Multiplicar") {
-            $resultado = $num1 * $num2;
-            echo "La multiplicación es: $resultado";
-        } elseif ($operacion == "Redondear Num 1") {
-            $resultado = round($num1);
-            echo "El redondeo de $num1 es: $resultado";
-        }
-    }
-    ?>
-</body>
-</html>
+echo "multiplicacion<br>";
+$num1 = 5;
+$num2 = 6;
+$multiplicacion = $num1 * $num2;
+
+echo "La multiplicación de $num1 y $num2 es: $multiplicacion<br>"; // La multiplicación de 5 y 6 es: 30
+
+echo "division<br>";
+$num1 = 20;
+$num2 = 4;
+$division = $num1 / $num2;
+
+echo "La división de $num1 y $num2 es: $division<br>"; // La división de 20 y 4 es: 5
+
+echo "modulo<br>";
+$num1 = 15;
+$num2 = 4;
+$modulo = $num1 % $num2;
+
+echo "El módulo de $num1 y $num2 es: $modulo<br>"; // El módulo de 15 y 4 es: 3
+
+echo "potencia<br>";
+$base = 2;
+$exponente = 3;
+$potencia = $base ** $exponente;
+
+echo "La potencia de $base elevado a $exponente es: $potencia<br>"; // La potencia de 2 elevado a 3 es: 8
+
+echo "redondeo<br>";
+$numero = 4.6;
+
+$redondeado = round($numero);
+$redondeado_arriba = ceil($numero);
+$redondeado_abajo = floor($numero);
+
+echo "El número redondeado es: $redondeado<br>"; // El número redondeado es: 5
+echo "El número redondeado hacia arriba es: $redondeado_arriba<br>"; // El número redondeado hacia arriba es: 5
+echo "El número redondeado hacia abajo es: $redondeado_abajo<br>"; // El número redondeado hacia abajo es: 4
+
+echo "ejemplos de modulo<br>";
+echo (5 % 3)."\n";        // muestra 2
+echo (5 % -3)."\n";       // muestra 2
+echo (-5 % 3)."\n";       // muestra -2
+echo (-5 % -3)."\n";      // muestra -2
+
+echo "Valor Absoluto<br>";
+$numero = -7;
+$valor_absoluto = abs($numero);
+
+echo "El valor absoluto de $numero es: $valor_absoluto"; // El valor absoluto de -7 es: 7
+
+?>
