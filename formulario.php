@@ -126,9 +126,9 @@
             echo "</ul>";
             echo "</div>";
         } else {
-            // htmlspecialchars() para prevenir ataques XSS
+            // mb_convert_case() con MB_CASE_TITLE pone en mayúscula la primera letra de cada palabra
             echo "<div class='resultado'>";
-            echo "El nombre ingresado es: <strong>" . htmlspecialchars($nombre) . "</strong><br>";
+            echo "El nombre ingresado es: <strong>" . htmlspecialchars(mb_convert_case($nombre, MB_CASE_TITLE, 'UTF-8')) . "</strong><br>";
             echo "La edad ingresada es: <strong>" . htmlspecialchars($edad) . "</strong>";
             echo "</div>";
         }
