@@ -1,68 +1,127 @@
-<?php
-echo "Operaciones Matematicas<br>";
-echo "Suma<br>";
-$num1 = 4;
-$num2 = 7;
-$suma = $num1 + $num2;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Problema #2 Laboratorio - Calculadora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e293b; /* Fondo general azul oscuro/pizarra */
+            color: #f8fafc;
+            padding: 20px;
+        }
+        form {
+            background-color: #0f172a; /* Fondo del formulario azul medianoche */
+            padding: 18px;
+            border-radius: 8px;
+            width: 320px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #e2e8f0;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #475569;
+            background-color: #1e293b;
+            color: #ffffff;
+            border-radius: 4px;
+        }
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #06b6d4;
+        }
+        input[type="submit"] {
+            background-color: #0891b2; /* Botón cian/turquesa */
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0e7490; /* Hover más oscuro */
+        }
+        .resultado {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #0f172a; /* Tarjeta contenedora de resultados */
+            border: 1px solid #334155;
+            width: 315px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .item-operacion {
+            background-color: #1e293b;
+            padding: 10px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border-left: 4px solid #06b6d4; /* Detalle de color cian */
+        }
+        .item-operacion:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
 
-echo "La suma de $num1 y $num2 es: $suma<br>"; // La suma de 4 y 7 es: 11
+    <h2>Calculadora PHP</h2>
 
-echo "Resta<br>";
-$num1 = 10;
-$num2 = 3;
-$resta = $num1 - $num2;
+    <form method="post" action="">
+        <label for="num1">Ingrese el primer número:</label>
+        <input type="number" step="any" id="num1" name="num1" required>
 
-echo "La resta de $num1 y $num2 es: $resta<br>"; // La resta de 10 y 3 es: 7
+        <label for="num2">Ingrese el segundo número:</label>
+        <input type="number" step="any" id="num2" name="num2" required>
 
-echo "multiplicacion<br>";
-$num1 = 5;
-$num2 = 6;
-$multiplicacion = $num1 * $num2;
+        <input type="submit" value="Calcular">
+    </form>
 
-echo "La multiplicación de $num1 y $num2 es: $multiplicacion<br>"; // La multiplicación de 5 y 6 es: 30
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $num1 = (float)$_POST['num1'];
+        $num2 = (float)$_POST['num2'];
 
-echo "division<br>";
-$num1 = 20;
-$num2 = 4;
-$division = $num1 / $num2;
+        // Operaciones
+        $suma = $num1 + $num2;
+        $resta = $num1 - $num2;
+        $multiplicacion = $num1 * $num2;
 
-echo "La división de $num1 y $num2 es: $division<br>"; // La división de 20 y 4 es: 5
+        echo "<div class='resultado'>";
+        echo "<h3 style='margin-top: 0; color: #06b6d4;'>Resultados:</h3>";
+        
+        // Suma
+        echo "<div class='item-operacion'>";
+        echo "<strong>Suma:</strong> $suma <br>";
+        echo "<strong>Suma redondeada:</strong> " . round($suma);
+        echo "</div>";
 
-echo "modulo<br>";
-$num1 = 15;
-$num2 = 4;
-$modulo = $num1 % $num2;
+        // Resta
+        echo "<div class='item-operacion'>";
+        echo "<strong>Resta:</strong> $resta <br>";
+        echo "<strong>Resta redondeada:</strong> " . round($resta);
+        echo "</div>";
 
-echo "El módulo de $num1 y $num2 es: $modulo<br>"; // El módulo de 15 y 4 es: 3
+        // Multiplicación
+        echo "<div class='item-operacion'>";
+        echo "<strong>Multiplicación:</strong> $multiplicacion <br>";
+        echo "<strong>Multiplicación redondeada:</strong> " . round($multiplicacion);
+        echo "</div>";
 
-echo "potencia<br>";
-$base = 2;
-$exponente = 3;
-$potencia = $base ** $exponente;
+        echo "</div>";
+    }
+    ?>
 
-echo "La potencia de $base elevado a $exponente es: $potencia<br>"; // La potencia de 2 elevado a 3 es: 8
-
-echo "redondeo<br>";
-$numero = 4.6;
-
-$redondeado = round($numero);
-$redondeado_arriba = ceil($numero);
-$redondeado_abajo = floor($numero);
-
-echo "El número redondeado es: $redondeado<br>"; // El número redondeado es: 5
-echo "El número redondeado hacia arriba es: $redondeado_arriba<br>"; // El número redondeado hacia arriba es: 5
-echo "El número redondeado hacia abajo es: $redondeado_abajo<br>"; // El número redondeado hacia abajo es: 4
-
-echo "ejemplos de modulo<br>";
-echo (5 % 3)."\n";        // muestra 2
-echo (5 % -3)."\n";       // muestra 2
-echo (-5 % 3)."\n";       // muestra -2
-echo (-5 % -3)."\n";      // muestra -2
-
-echo "Valor Absoluto<br>";
-$numero = -7;
-$valor_absoluto = abs($numero);
-
-echo "El valor absoluto de $numero es: $valor_absoluto"; // El valor absoluto de -7 es: 7
-
-?>
+</body>
+</html>
