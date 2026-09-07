@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:required:invalid {
+            border: 1px solid red;
+        }
+
+        input:required:valid {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <div style="margin:1em">
+            <label for="week1">Enter week1</label><br />
+            <!-- <input type="week" id="week1" name="week1" value="2024-W25" placeholder="Choose week"/> -->
+            <input type="email" id="email1" name="email1" value="" placeholder="Enter email" required />
+        </div>
+    </form>
+
+</body>
+</html>

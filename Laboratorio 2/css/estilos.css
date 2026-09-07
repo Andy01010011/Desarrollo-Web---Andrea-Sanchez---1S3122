@@ -1,0 +1,165 @@
+
+/* Estilos Generales y Resets Básicos */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e293b; /* Azul pizarra oscuro */
+    color: #f8fafc;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Contenedor Principal */
+.contenedor {
+    max-width: 800px;
+    background-color: #0f172a; /* Azul medianoche */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #334155;
+    margin: 0 auto;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #06b6d4; /* Cian turquesa */
+    margin-top: 0;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+}
+
+p {
+    color: #e2e8f0;
+}
+
+/* Estilos para Tablas HTML (Informe de Gastos, etc.)  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #38bdf8; /* Azul claro */
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+th {
+    background-color: #1e293b;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+/* Encabezados de división de tabla (por ej. Buenos Aires / Córdoba) */
+th[colspan="5"], 
+th[colspan] {
+    background-color: #0891b2; /* Cian / Azul medio */
+    color: #ffffff;
+    text-align: left;
+    font-size: 1.05em;
+    letter-spacing: 0.5px;
+}
+
+/* Filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #1a2436;
+}
+
+tbody tr:hover {
+    background-color: #334155;
+}
+
+/* Formularios y Controles de Entrada */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #e2e8f0;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 12px 0;
+    box-sizing: border-box;
+    border: 1px solid #475569;
+    background-color: #1e293b;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 5px rgba(6, 182, 212, 0.5);
+}
+
+input[type="submit"],
+button {
+    background-color: #0891b2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0e7490;
+}
+
+input[type="submit"]:active,
+button:active {
+    transform: scale(0.99);
+}
+
+/* Tarjetas de Mensajes (Resultados y Errores) */
+.resultado {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background-color: #064e3b; /* Verde esmeralda oscuro */
+    border: 1px solid #059669;
+    border-radius: 8px;
+    color: #ecfdf5;
+}
+
+.error {
+    margin-top: 15px;
+    padding: 12px 15px;
+    background-color: #7f1d1d; /* Rojo vino oscuro */
+    border: 1px solid #dc2626;
+    border-radius: 8px;
+    color: #fef2f2;
+}
+
+.error ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+}

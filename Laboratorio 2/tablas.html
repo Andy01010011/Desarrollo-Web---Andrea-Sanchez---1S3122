@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo práctico de maquetación web con HTML5">
+    <meta name="keywords" content="html, tablas, laboratorio">
+    <meta name="distribution" content="Global">
+    <meta name="author" content="Profesor de Desarrollo Web">
+    <meta name="robots" content="index,follow">
+    
+    <link rel="shortcut icon" href="img/b_2i10.ico">
+    <!-- Vinculación del archivo CSS externo -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Ejemplo Integral con Metadatos</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <table>
+            <caption>Informe de gastos de viaje</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Comida</th>
+                    <th>Hotel</th>
+                    <th>Transporte</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila Header para Buenos Aires -->
+                <tr>
+                    <th id="buenos-aires" axis="buenos-aires" colspan="5">Buenos Aires</th>
+                </tr>
+                <tr>
+                    <th headers="buenos-aires">25-Ago-97</th>
+                    <td>37.34</td>
+                    <td>112.00</td>
+                    <td>45.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th headers="buenos-aires">26-Ago-97</th>
+                    <td>27.28</td>
+                    <td>112.00</td>
+                    <td>45.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th headers="buenos-aires">Subtotales</th>
+                    <td>65.00</td>
+                    <td>224.00</td>
+                    <td>90.00</td>
+                    <td>379.02</td>
+                </tr>
+
+                <!-- Fila Header para Córdoba -->
+                <tr>
+                    <th id="cordoba" axis="cordoba" colspan="5">Córdoba</th>
+                </tr>
+                <tr>
+                    <th headers="cordoba">27-Ago-97</th>
+                    <td>96.00</td>
+                    <td>109.00</td>
+                    <td>36.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th headers="cordoba">28-Ago-97</th>
+                    <td>35.00</td>
+                    <td>109.00</td>
+                    <td>36.00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th headers="cordoba">Subtotales</th>
+                    <td>196.27</td>
+                    <td>442.00</td>
+                    <td>162.00</td>
+                    <td>800.27</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

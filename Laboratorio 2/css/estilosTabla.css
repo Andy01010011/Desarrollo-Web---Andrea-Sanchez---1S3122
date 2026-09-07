@@ -1,0 +1,59 @@
+/* Estilos/estilosTabla.css */
+
+/* Reglas generales para la tabla */
+.tabla {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: right;
+    width: 600px;
+}
+
+/* Estilo para los encabezados de la tabla */
+.tabla th {
+    padding: 5px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #558FA6;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    font-family: "Trebuchet MS", Arial;
+    text-transform: uppercase; /* Convertir a mayúsculas */
+}
+
+/* Modo 1 (Filas estándar / impares) */
+.tabla .modo1 td {
+    padding: 5px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-right-color: #A4C4D0;
+    border-bottom-color: #A4C4D0;
+    font-family: "Trebuchet MS", Arial;
+    text-align: left;
+}
+
+/* Modo 2 (Estilo de fila alternada) */
+.tabla .modo2 {
+    padding: 5px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-color: #EBE9BC;
+    border-bottom-color: #EBE9BC;
+}
+
+.tabla .modo2 td {
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #fdfdf1;
+    color: #990000;
+    border-bottom-style: solid;
+    border-right-color: #EBE9BC;
+    font-family: "Trebuchet MS", Arial;
+    text-align: left;
+}
