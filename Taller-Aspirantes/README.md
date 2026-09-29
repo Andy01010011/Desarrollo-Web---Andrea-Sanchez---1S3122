@@ -1,7 +1,7 @@
 # Taller #3 - Sistema de Admisión de Aspirantes (UTP)
 
 **Materia:** Desarrollo Web  
-**Estudiante:** Iliano Navarro  
+**Estudiante:** Andrea Sánchez 
 **Universidad:** Universidad Tecnológica de Panamá (UTP)  
 **Facultad:** Facultad de Ingeniería en Sistemas Computacionales (FISC)  
 **Facilitadora:** Ing. Irina Fong  
@@ -9,7 +9,7 @@
 ---
 
 ## 📝 Descripción del Proyecto
-Este módulo corresponde al **Taller #3 / Quiz #1** de la asignatura. Consiste en una aplicación web modular desarrollada en PHP y maquetada con **Bootstrap v5.3.8**, diseñada para el registro, sanitización, procesamiento y validación de datos de aspirantes universitarios, incluyendo la carga segura de fotografías de perfil sin uso de base de datos.
+Consiste en una aplicación web modular desarrollada en PHP y maquetada con **Bootstrap v5.3.8**, diseñada para el registro, sanitización, procesamiento y validación de datos de aspirantes universitarios, incluyendo la carga segura de fotografías de perfil sin uso de base de datos.
 
 ---
 
@@ -28,7 +28,6 @@ Practicas/
     │   └── .htaccess        # Regla de seguridad: inhabilita la ejecución de scripts
     ├── index.php            # Formulario visual con enctype="multipart/form-data"
     ├── procesar.php         # Backend procesador, sanitizador y validador
-    └── README.md            # Documentación del proyecto
 ```
 
 ---
@@ -64,16 +63,3 @@ Practicas/
    * **Formatos Permitidos:** `JPG`, `JPEG`, `PNG`, `GIF` y la extensión moderna `WEBP`.
    * **Renombrado Seguro:** Generación de identificadores únicos mediante `uniqid('aspirante_')` para evitar la sobreescritura de archivos.
    * **Protección de Directorio:** Inclusión de archivo `.htaccess` en `./uploaded_files/` que prohíbe la ejecución de scripts ejecutables PHP/HTML desde el navegador.
-
----
-
-## 🚀 Instalación y Ejecución Local
-
-1. Inicie el servidor Apache en **XAMPP / WampServer**.
-2. Ubique la carpeta del proyecto en la ruta de su servidor local:
-   `C:\xampp\htdocs\Practicas\Taller-Aspirantes\`
-3. Ingrese a la siguiente URL desde cualquier navegador web:
-   ```text
-   http://localhost/Practicas/Taller-Aspirantes/index.php
-   ```
-```
