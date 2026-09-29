@@ -15,24 +15,6 @@ Este módulo corresponde al **Laboratorio #1** de la asignatura **Desarrollo Web
 
 ---
 
-## 🏗️ Estructura de Archivos
-
-```text
-Practicas/
-└── Laboratorio 1/
-    ├── info.php               # Verificación de instalación y configuración de PHP (phpinfo)
-    ├── practica1.php          # Introducción a PHP embebido en código HTML5
-    ├── practica2.php          # Operaciones aritméticas, potenciación y funciones de redondeo
-    ├── practica3.php          # Declaración e interpolación de variables en español
-    ├── circulo.php            # Cálculo del área y perímetro de un círculo con la constante PI
-    ├── conversor.php          # Conversión interactiva de pulgadas a centímetros
-    ├── formulario.html        # Formulario de captura de datos (nombre y edad)
-    ├── pagina2.php            # Procesamiento de formulario con validación de mayoría de edad
-    └── imprimir_cadenas.php   # Saneamiento, formateo e inspección de cadenas de texto
-```
-
----
-
 ## 🎨 Interfaz y Estilos (Dark Slate & Teal)
 Para cumplir con los criterios de la rúbrica sobre **Valor Agregado y CSS**, se implementó una interfaz unificada y moderna adaptada al tema **Dark Slate & Teal**:
 
@@ -57,15 +39,3 @@ Para cumplir con los criterios de la rúbrica sobre **Valor Agregado y CSS**, se
 3. **Impresión Dinámica y Formateo:**
    * Integración de la zona horaria de Panamá (`America/Panama`) e impresiones dinámicas de fecha con `date('d/m/Y h:i:s a')`.
    * Redondeo controlado de valores numéricos flotantes con `round()`, `ceil()` y `floor()`.
-
----
-
-## 🚀 Instalación y Ejecución Local
-
-1. Inicie el servidor Apache en **XAMPP / WampServer**.
-2. Ubique la carpeta del proyecto en la ruta de su servidor local:
-   `C:\xampp\htdocs\Practicas\Laboratorio 1\`
-3. Acceda desde cualquier navegador web a:
-   ```text
-   http://localhost/Practicas/Laboratorio%201/circulo.php
-   ```
