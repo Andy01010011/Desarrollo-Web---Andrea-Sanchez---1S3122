@@ -45,25 +45,3 @@ El repositorio está organizado en subcarpetas independientes, cada una con sus 
 * **Entorno de Desarrollo & Servidor Local:** Visual Studio Code, XAMPP / WampServer (Servidor Web Apache), Git, GitHub.
 
 ---
-
-## 🚀 Instrucciones de Ejecución Local
-
-1. Clonar el repositorio dentro del directorio raíz de su servidor local Apache (`htdocs` o `www`):
-   ```bash
-   git clone https://github.com/Andy01010011/Practicas-Andrea-Sanchez.git Practicas
-   ```
-2. Asegurarse de que el servidor local **Apache** esté activo en XAMPP / WampServer.
-3. Acceder a los diferentes módulos desde cualquier navegador web a través de las siguientes rutas:
-   * **Laboratorio 1:** `http://localhost/Practicas/Laboratorio-1/circulo.php`
-   * **Laboratorio 2:** `http://localhost/Practicas/Laboratorio-2/tablas.html`
-   * **Taller 3 (Aspirantes):** `http://localhost/Practicas/Taller-Aspirantes/index.php`
-
----
-
-## 📜 Licencia y Derechos de Autor
-
-Desarrollado como parte del plan de estudios de la **Universidad Tecnológica de Panamá (UTP)**.  
-&copy; <?php echo date('Y'); ?> Andrea Sánchez - Todos los derechos reservados.
-```
-
-Este archivo `README.md` principal consolida el propósito del portafolio, el índice de laboratorios, el stack tecnológico y las instrucciones de ejecución. Puedes guardarlo directamente en la raíz de tu carpeta de trabajo (`C:\xampp\htdocs\Practicas\README.md`) y subirlo a GitHub.
