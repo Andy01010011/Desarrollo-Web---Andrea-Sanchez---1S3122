@@ -30,3 +30,30 @@ El Laboratorio 2 se enfoca en el dominio de la maquetación web con HTML5 semán
 * **Contenedores y Tarjetas:** Azul medianoche (`#0f172a`) con bordes redondeados y sombras suaves.
 * **Acentos y Encabezados:** Cian turquesa (`#06b6d4` / `#38bdf8`).
 * **Tablas e Intercalados:** Filas alternadas en tonos oscuros (`#1a2436`) y resaltados en azul/teal (`#0891b2`).
+
+---
+
+## 🖼️ Ilustración y Evidencias Visuales
+### Hipervinculos
+<img width="525" height="619" alt="image" src="https://github.com/user-attachments/assets/bf55ad2e-f69b-4f99-81c5-0d642df671ca" />
+<img width="733" height="333" alt="image" src="https://github.com/user-attachments/assets/cccece6f-fc18-4bad-822b-230e222ebe9c" />
+
+### Ejemplo secciones
+<img width="547" height="606" alt="image" src="https://github.com/user-attachments/assets/2275adb9-ca43-4ef6-9774-1e13ce4aadc9" />
+<img width="699" height="597" alt="image" src="https://github.com/user-attachments/assets/3a562643-ad0e-4c9a-8dd6-a59c9d922f7a" />
+
+### Parrafos
+<img width="537" height="336" alt="image" src="https://github.com/user-attachments/assets/59222943-3663-4e60-be68-88fc31852bb8" />
+<img width="436" height="65" alt="image" src="https://github.com/user-attachments/assets/d2be9209-fe48-4bf5-8ed8-30eb7a9db54f" />
+
+### Tablas
+<img width="643" height="619" alt="image" src="https://github.com/user-attachments/assets/a029a423-072c-429a-b17e-251d6415adab" />
+<img width="869" height="598" alt="image" src="https://github.com/user-attachments/assets/d93d8c57-1b2e-4aae-bcc6-637eb8baaa74" />
+
+### Tablas 2
+<img width="533" height="543" alt="image" src="https://github.com/user-attachments/assets/2a89e398-17d4-44cb-996f-32764c64dbbe" />
+<img width="619" height="106" alt="image" src="https://github.com/user-attachments/assets/6ea4e77d-6d94-4bdf-a642-f272213186d6" />
+
+### Validaciones HTML5
+<img width="759" height="481" alt="image" src="https://github.com/user-attachments/assets/6d912d91-e4bb-4acd-b130-4701f00ffa6b" />
+<img width="240" height="86" alt="image" src="https://github.com/user-attachments/assets/15051fba-3dba-4249-808e-191b443f4dee" />
