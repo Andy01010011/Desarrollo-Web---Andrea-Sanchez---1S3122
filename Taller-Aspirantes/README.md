@@ -63,3 +63,13 @@ Practicas/
    * **Formatos Permitidos:** `JPG`, `JPEG`, `PNG`, `GIF` y la extensión moderna `WEBP`.
    * **Renombrado Seguro:** Generación de identificadores únicos mediante `uniqid('aspirante_')` para evitar la sobreescritura de archivos.
    * **Protección de Directorio:** Inclusión de archivo `.htaccess` en `./uploaded_files/` que prohíbe la ejecución de scripts ejecutables PHP/HTML desde el navegador.
+
+## 🖼️ Ilustración y Evidencias Visuales
+### Index
+<img width="935" height="618" alt="image" src="https://github.com/user-attachments/assets/3ba73d24-1987-4e61-8eaa-5e9e103a1d99" />
+
+### Procesar
+<img width="571" height="580" alt="image" src="https://github.com/user-attachments/assets/6410ffff-0050-470d-b1d0-00750511b26d" />
+
+### Resultado
+<img width="889" height="586" alt="image" src="https://github.com/user-attachments/assets/43f4ee59-8be5-4ca0-b359-adf2ec29ef57" />
