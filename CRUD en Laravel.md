@@ -1,4 +1,4 @@
-# Laboratorio #2 - Implementación de Módulo CRUD de Productos en Laravel
+# Laboratorio - Implementación de Módulo CRUD de Productos en Laravel
 
 **Universidad:** Universidad Tecnológica de Panamá (UTP)  
 **Facultad:** Facultad de Ingeniería en Sistemas Computacionales (FISC)  
@@ -35,6 +35,8 @@ Se generó el modelo `Product` junto a su archivo de migración:
 ```bash
 php artisan make:model Product -m
 ```
+<img width="853" height="92" alt="image" src="https://github.com/user-attachments/assets/2c38c34e-71c8-47a9-bb23-0dcffecdb144" />
+
 
 Estructura de la tabla `products` en la migración:
 
@@ -75,6 +77,9 @@ composer require ibex/crud-generator --dev
 php artisan vendor:publish --tag=crud
 php artisan make:crud products
 ```
+<img width="480" height="218" alt="image" src="https://github.com/user-attachments/assets/38cc24cd-bd8c-42d3-8e9f-270776fb3782" />
+<img width="461" height="245" alt="image" src="https://github.com/user-attachments/assets/18ce9c4e-137f-4f45-818a-0c1fb42cb3bd" />
+
 
 *Opción seleccionada en la consola:* `bootstrap`
 
@@ -87,12 +92,15 @@ use App\Http\Controllers\ProductController;
 
 Route::resource('products', ProductController::class);
 ```
+<img width="732" height="283" alt="image" src="https://github.com/user-attachments/assets/cf4e831a-ad51-439c-b748-2885ef8d556b" />
+
 
 Regeneración del mapa de clases con Composer:
 
 ```bash
 composer dump-autoload
 ```
+<img width="472" height="239" alt="image" src="https://github.com/user-attachments/assets/083fb65d-917a-4143-a7bd-64f851af7dba" />
 
 ---
 
@@ -105,27 +113,17 @@ composer dump-autoload
 
 ## 5. Evidencias Visuales y Resultados Obtenidos
 
-Agrega las capturas de pantalla correspondientes debajo de cada apartado para documentar el funcionamiento del laboratorio.
+### 5.1 Panel Principal con Enlace a Productos (`/home`)
 
-### 5.1 Formulario de Inicio de Sesión (`/login`)
+<img width="1365" height="590" alt="image" src="https://github.com/user-attachments/assets/797626ea-d027-4f52-be76-f870b94c14bb" />
 
-<!-- Inserta aquí la captura de pantalla del formulario de inicio de sesión. -->
+### 5.2 Módulo CRUD - Crear Nuevo Producto (`/products/create`)
 
-### 5.2 Panel Principal con Enlace a Productos (`/home`)
+<img width="1365" height="597" alt="image" src="https://github.com/user-attachments/assets/25f4a702-810c-424a-b88a-99daffa35971" />
 
-<!-- Inserta aquí la captura de pantalla del panel principal. -->
+### 5.3 Verificación en la Base de Datos (phpMyAdmin)
 
-### 5.3 Módulo CRUD - Listado de Productos (`/products`)
-
-<!-- Inserta aquí la captura de pantalla del listado de productos. -->
-
-### 5.4 Módulo CRUD - Crear Nuevo Producto (`/products/create`)
-
-<!-- Inserta aquí la captura de pantalla del formulario para crear productos. -->
-
-### 5.5 Verificación en la Base de Datos (phpMyAdmin)
-
-<!-- Inserta aquí la captura de pantalla de la tabla products en phpMyAdmin. -->
+<img width="1365" height="591" alt="image" src="https://github.com/user-attachments/assets/9b47da18-47f2-404b-ad63-d8ba0f499ba7" />
 
 ---
 
