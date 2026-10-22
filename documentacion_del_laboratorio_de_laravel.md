@@ -33,6 +33,8 @@ cd C:\xampp\htdocs\
 composer create-project laravel/laravel PracticaLaravel
 cd PracticaLaravel
 ```
+<img width="1061" height="637" alt="image" src="https://github.com/user-attachments/assets/9921bdb6-3bd1-48df-bf37-1515b7d7031c" />
+
 
 ### **Paso 3.2: Configuración de la Base de Datos (.env)**
 Se creó la base de datos `practica_laravel` en phpMyAdmin (`http://localhost/phpmyadmin`) y se enlazó en el archivo de variables de entorno `.env` en la raíz del proyecto:
@@ -44,6 +46,9 @@ DB_DATABASE=practica_laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+<img width="240" height="297" alt="image" src="https://github.com/user-attachments/assets/7da215dc-fd83-4915-8dc1-f93477e5efa9" />
+<img width="142" height="100" alt="image" src="https://github.com/user-attachments/assets/3abad0a7-4dac-4046-816d-8e3e8164c5cb" />
+
 
 ### **Paso 3.3: Preconfiguración de Longitud de Cadenas en la BD**
 Para mitigar incompatibilidades de longitud en índices de cadenas durante las migraciones en MySQL, se agregó la regla por defecto en `app/Providers/AppServiceProvider.php`:
@@ -55,6 +60,8 @@ public function boot(): void
     Schema::defaultStringLength(191);
 }
 ```
+<img width="554" height="349" alt="image" src="https://github.com/user-attachments/assets/bf782d62-ce89-44b3-a322-7037f17bbbc3" />
+
 
 ### **Paso 3.4: Ejecución de Migraciones de Base de Datos**
 Se procedió a limpiar la caché del sistema de configuración y ejecutar las migraciones base de Laravel para generar la tabla de usuarios (`users`):
@@ -63,6 +70,8 @@ php artisan config:clear
 php artisan config:cache
 php artisan migrate
 ```
+<img width="522" height="258" alt="image" src="https://github.com/user-attachments/assets/047120b4-5ca4-46bf-9a92-20530c33c6da" />
+
 
 ### **Paso 3.5: Instalación del Módulo de Autenticación con Bootstrap**
 Se instaló el paquete de scaffolds oficial de Laravel (`laravel/ui`) y se generó el maquetado con vistas para Bootstrap:
@@ -70,6 +79,9 @@ Se instaló el paquete de scaffolds oficial de Laravel (`laravel/ui`) y se gener
 composer require laravel/ui
 php artisan ui bootstrap --auth
 ```
+<img width="649" height="643" alt="image" src="https://github.com/user-attachments/assets/ee975151-dd24-45d0-abbb-b0e086dafb63" />
+<img width="770" height="219" alt="image" src="https://github.com/user-attachments/assets/4037aeb1-5cf3-4919-934f-09db0d7e1dfd" />
+
 
 ### **Paso 3.6: Compilación e Instalación Frontend**
 Se instalaron las librerías requeridas por Node y se ejecutó la compilación de estilos en tiempo real con Vite:
@@ -77,12 +89,17 @@ Se instalaron las librerías requeridas por Node y se ejecutó la compilación d
 npm install
 npm run dev
 ```
+<img width="642" height="258" alt="image" src="https://github.com/user-attachments/assets/bbf4070b-bbe6-49ec-930b-d255455dfb80" />
+<img width="480" height="275" alt="image" src="https://github.com/user-attachments/assets/730e59a8-393f-40d3-b6a1-b0aa9fb0c3cb" />
+
 
 ### **Paso 3.7: Ejecución del Servidor HTTP de PHP**
 En una terminal paralela dentro del directorio del proyecto, se levantó el servidor de desarrollo en el puerto 8000:
 ```bash
 php artisan serve
 ```
+<img width="1025" height="297" alt="image" src="https://github.com/user-attachments/assets/ae53e70a-0996-44d9-b98c-5fba8c54d791" />
+
 
 ---
 
@@ -100,29 +117,13 @@ php artisan serve
 
 ---
 
-## **5. Evidencias Visuales y Capturas de Pantalla**
-
-### **5.1 Estructura del Código y Comandos**
-*(Espacio reservado para agregar captura de la terminal de VS Code ejecutando `php artisan serve` y `npm run dev`)*
-![Estructura del Proyecto y Terminal](img/terminal_ejecucion.png)
+### **5.1 Formulario de Registro (`/register`)**
+<img width="1188" height="598" alt="image" src="https://github.com/user-attachments/assets/c11c9fde-0c6c-4885-810e-bb771842c9be" />
 
 ---
 
-### **5.2 Formulario de Registro (`/register`)**
-*(Espacio reservado para agregar captura del navegador web en `http://127.0.0.1:8000/register` mostrando el formulario con campos Name, Email Address, Password y Confirm Password)*
-![Formulario de Registro](img/vista_registro.png)
-
----
-
-### **5.3 Formulario de Inicio de Sesión (`/login`)**
-*(Espacio reservado para agregar captura del navegador web en `http://127.0.0.1:8000/login` con el formulario estilizado con Bootstrap)*
-![Formulario de Login](img/vista_login.png)
-
----
-
-### **5.4 Confirmación en la Base de Datos (phpMyAdmin)**
-*(Espacio reservado para agregar captura de la tabla `users` en phpMyAdmin mostrando la fila insertada con los datos del usuario registrado)*
-![Tabla de Usuarios en phpMyAdmin](img/base_de_datos.png)
+### **5.2 Formulario de Inicio de Sesión (`/login`)**
+<img width="1129" height="477" alt="image" src="https://github.com/user-attachments/assets/314169df-eca6-4a8d-976a-29386cfc6970" />
 
 ---
 
